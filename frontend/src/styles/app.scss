@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat, sans-serif;
+}
+
+@import "./directory";
+@import "./file";
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.unsplash.com/photo-1619532100120-9a7b2291e2a6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=311&q=80");
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+.info {
+  display: flex;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 0;
+  border-right: 0;
+  padding: 5px 0;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.App {
+  margin: 4rem 10rem;
+  backdrop-filter: blur(10px);
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  color: white;
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+
+  min-height: 80vh;
+}
+
+h1.head {
+  text-align: center;
+  padding: 2rem;
+}
+
+main {
+  padding: 1rem 4rem;
+  display: flex;
+  .left {
+    min-width: 20%;
+    h2 {
+      margin-bottom: 25px;
+    }
+    .go-back {
+      margin-bottom: 10px;
+      transition: 0.4s ease;
+      padding: 5px 0 5px 5px;
+      cursor: pointer;
+      font-size: 2rem;
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.3);
+      }
+    }
+  }
+
+  .right {
+    width: 100%;
+    .head {
+      margin-bottom: 30px;
+      display: flex;
+      flex-grow: 1;
+      justify-content: space-around;
+    }
+  }
+}

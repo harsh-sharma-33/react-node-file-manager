@@ -1,0 +1,22 @@
+.file {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  h4 {
+    font-weight: 400;
+  }
+
+  h4.name {
+    width: 150px;
+  }
+  h4.size {
+    align-self: center;
+    justify-self: flex-end;
+  }
+  h4.type {
+    width: 150px;
+    // align-self: center;
+    text-align: center;
+    // justify-self: flex-start;
+  }
+}
